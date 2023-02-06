@@ -1,0 +1,72 @@
+.homeDiv {
+	// background-color: black;
+	display: flex;
+	margin: auto 0;
+	width: 100%;
+
+	.intro {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+
+		.callToAction {
+			display: flex;
+			flex-direction: column;
+			margin: 2.5rem 0 auto 0;
+
+			width: 50%;
+
+			a {
+				display: flex;
+				padding: 0.625rem 0.625rem;
+
+				&:first-child {
+					background: none;
+					color: $secondary-color;
+					border: 0.125rem solid $secondary-color;
+					margin: 0 0 1.25rem 0;
+
+					&:hover {
+						background-color: $secondary-color;
+						color: $tertiary-color;
+					}
+				}
+
+				&:last-child {
+					background: none;
+					border-top: none;
+					border-right: none;
+					border-bottom: 0.125rem solid $secondary-color;
+					border-left: none;
+					color: $secondary-color;
+
+					&:hover {
+						border: 0.125rem solid $secondary-color;
+					}
+				}
+
+				button {
+					background: none;
+					border: none;
+					color: inherit;
+					font-size: 1.25rem;
+					font-weight: bold;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+	.img {
+		display: flex;
+		width: 50%;
+		height: 80vh;
+
+		img {
+			margin: 0 0 0 auto;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

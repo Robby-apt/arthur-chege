@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('../fonts/Molot.otf');
+
+// global variables
+$primary-color: #000916;
+$secondary-color: #fff;
+$tertiary-color: #000;
+
+// global styles
+* {
+	font-family: Roboto, sans-serif;
+	transition: 0.5s ease-in-out;
+}
+
+body {
+	background-color: $primary-color;
+	box-sizing: border-box;
+	color: $secondary-color;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+
+	width: 100vw;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.bodyContainer {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 0 auto;
+	padding: 0;
+
+	width: 90vw;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+nav {
+	display: flex;
+	margin: 0 0 1.25rem 0;
+	padding: 1.25rem 0;
+	width: 100%;
+
+	p {
+		font-family: Molot, sans-serif;
+		font-size: 2.5rem;
+		font-weight: bold;
+		margin: auto auto auto 0;
+	}
+
+	div {
+		margin: auto 0 auto auto;
+
+		a {
+			font-size: 1.25rem;
+
+			&:not(:last-child) {
+				margin-right: 1.25rem;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+footer {
+	border-top: 0.125rem dotted $secondary-color;
+	display: flex;
+	margin: auto 0 0 0;
+	padding: 0.625rem 0;
+	position: relative;
+	width: 100%;
+
+	p {
+		padding: 0;
+
+		&:first-child {
+			margin: 0 auto;
+			transform: translateX(100%);
+		}
+
+		&:last-child {
+			margin: 0 0 0 auto;
+			opacity: 0.5;
+		}
+	}
+}
+
+// home styling
+@import './home';
+
+// portfolio styling
+@import './portfolio';
+
+// contact styling
+@import './contact';
+
+// media queries
+@import './media-queries';
