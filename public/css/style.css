@@ -110,6 +110,7 @@ footer p:last-child {
 .homeDiv .intro .callToAction a:first-child:hover {
   background-color: #fff;
   color: #000;
+  cursor: pointer;
 }
 .homeDiv .intro .callToAction a:last-child {
   background: none;
@@ -129,6 +130,9 @@ footer p:last-child {
   font-size: 1.25rem;
   font-weight: bold;
   margin: auto;
+}
+.homeDiv .intro .callToAction a button:hover {
+  cursor: pointer;
 }
 .homeDiv .img {
   display: flex;

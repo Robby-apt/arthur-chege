@@ -29,6 +29,7 @@
 					&:hover {
 						background-color: $secondary-color;
 						color: $tertiary-color;
+						cursor: pointer;
 					}
 				}
 
@@ -52,6 +53,10 @@
 					font-size: 1.25rem;
 					font-weight: bold;
 					margin: auto;
+
+					&:hover {
+						cursor: pointer;
+					}
 				}
 			}
 		}
