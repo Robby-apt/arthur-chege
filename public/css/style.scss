@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('../fonts/Molot.otf');
+
+@font-face {
+	font-family: Molot;
+	src: url(../fonts/Molot.otf);
+}
 
 // global variables
 $primary-color: #000916;

@@ -1,5 +1,37 @@
 <%- include ('partials/header') -%>
 
-<div class="gallery"></div>
+<div class="gallery">
+	<div class="collection firstColumn">
+		<% artwork.firstColumn.forEach((art)=>{ %>
+		<div class="imgOuterBox">
+			<img src="<%= art.source %>" alt="<%= art.name %>" loading="lazy" />
+		</div>
+		<% }) %>
+	</div>
+
+	<div class="collection secondColumn">
+		<% artwork.secondColumn.forEach((art)=>{ %>
+		<div class="imgOuterBox">
+			<img src="<%= art.source %>" alt="<%= art.name %>" loading="lazy" />
+		</div>
+		<% }) %>
+	</div>
+
+	<div class="collection thirdColumn">
+		<% artwork.thirdColumn.forEach((art)=>{ %>
+		<div class="imgOuterBox">
+			<img src="<%= art.source %>" alt="<%= art.name %>" loading="lazy" />
+		</div>
+		<% }) %>
+	</div>
+
+	<div class="collection fourthColumn">
+		<% artwork.fourthColumn.forEach((art)=>{ %>
+		<div class="imgOuterBox">
+			<img src="<%= art.source %>" alt="<%= art.name %>" loading="lazy" />
+		</div>
+		<% }) %>
+	</div>
+</div>
 
 <%- include ('partials/footer') -%>

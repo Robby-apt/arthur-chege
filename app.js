@@ -24,9 +24,8 @@ app.get('/', (req, res) => {
 
 // portfolio routes
 app.get('/portfolio', (req, res) => {
-	res.render('portfolio');
+	res.render('portfolio', { artwork: artwork });
 });
-
 // contact routes
 app.get('/contact', (req, res) => {
 	res.render('contact');
